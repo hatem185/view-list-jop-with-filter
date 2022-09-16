@@ -152,7 +152,7 @@ const createCompanyCard = (e = {}) => {
   const companyCard = createElement({
     tag: "div",
     classList: ["company-card"],
-    idNames: `card-${e.id}`,
+    idName: `card-${e.id}`,
   });
   e.featured ? companyCard.classList.add("featured-card") : null;
   companyCard.appendChild(createCompanyDetails(e));
